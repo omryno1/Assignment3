@@ -8,18 +8,58 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate , AddStudentDelegate {
 
+    @IBOutlet weak var mainTableView: UITableView!
+    
+    var studentsDB = StudentDB.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        mainTableView.dataSource = self
+        mainTableView.delegate = self
+    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func addStudenButtonWasPressed(_ sender: UIBarButtonItem) {
+        let addStudentVC = storyboard?.instantiateViewController(withIdentifier: "addStudentVC") as? AddStudentController
+        addStudentVC?.studentDelegate = self
+        self.navigationController?.show(addStudentVC!, sender: self)
     }
 
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return studentsDB.numOfStudents()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "student") as! TableViewCell
+        cell.student = studentsDB.pullStudent(indexPath: indexPath)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let studentDetailsVC = storyboard?.instantiateViewController(withIdentifier: "detailsVC") as! StudentDetailsViewController
+        let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        studentDetailsVC.student = cell.student!
+        self.navigationController?.show(studentDetailsVC, sender: self)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            deleteStudent(indexPath: indexPath)
+        }
+    }
+
+    func addStudent(student: Student) {
+        studentsDB.addStudent(student: student)
+        mainTableView.reloadData()
+    }
+    
+    func deleteStudent(indexPath: IndexPath) {
+        let stutdentToDelete = studentsDB.pullStudent(indexPath: indexPath)
+        studentsDB.deleteStudent(id: stutdentToDelete.studentID!)
+        mainTableView.reloadData()
+    }
 }
 

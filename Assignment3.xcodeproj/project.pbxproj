@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD75E06C1E05ACB2001257A8 /* StudentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75E06B1E05ACB2001257A8 /* StudentDetailsViewController.swift */; };
+		CD75E06E1E05ACE0001257A8 /* StudentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75E06D1E05ACE0001257A8 /* StudentDelegate.swift */; };
+		CD75E0711E05DD4F001257A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD75E06F1E05DD4F001257A8 /* Main.storyboard */; };
 		CD931FD21E055BD9000C20BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FD11E055BD9000C20BE /* AppDelegate.swift */; };
 		CD931FD41E055BD9000C20BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FD31E055BD9000C20BE /* ViewController.swift */; };
-		CD931FD71E055BD9000C20BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD931FD51E055BD9000C20BE /* Main.storyboard */; };
 		CD931FDA1E055BD9000C20BE /* Assignment3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD931FD81E055BD9000C20BE /* Assignment3.xcdatamodeld */; };
 		CD931FDC1E055BD9000C20BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD931FDB1E055BD9000C20BE /* Assets.xcassets */; };
 		CD931FDF1E055BD9000C20BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD931FDD1E055BD9000C20BE /* LaunchScreen.storyboard */; };
+		CD931FE71E056B40000C20BE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FE61E056B40000C20BE /* TableViewCell.swift */; };
+		CD931FEA1E056D3A000C20BE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FE91E056D3A000C20BE /* Student.swift */; };
+		CD931FEE1E0576BD000C20BE /* AddStudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FED1E0576BD000C20BE /* AddStudentController.swift */; };
+		CD931FF11E057E17000C20BE /* StudentDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FF01E057E17000C20BE /* StudentDB.swift */; };
+		CD931FF51E05A015000C20BE /* Jitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FF41E05A015000C20BE /* Jitterable.swift */; };
+		CD931FF71E05A028000C20BE /* Flashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD931FF61E05A028000C20BE /* Flashable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD75E06B1E05ACB2001257A8 /* StudentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailsViewController.swift; sourceTree = "<group>"; };
+		CD75E06D1E05ACE0001257A8 /* StudentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDelegate.swift; sourceTree = "<group>"; };
+		CD75E0701E05DD4F001257A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD931FCE1E055BD9000C20BE /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD931FD11E055BD9000C20BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD931FD31E055BD9000C20BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD931FD61E055BD9000C20BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD931FD91E055BD9000C20BE /* Assignment3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment3.xcdatamodel; sourceTree = "<group>"; };
 		CD931FDB1E055BD9000C20BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD931FDE1E055BD9000C20BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD931FE01E055BD9000C20BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD931FE61E056B40000C20BE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CD931FE91E056D3A000C20BE /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		CD931FED1E0576BD000C20BE /* AddStudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentController.swift; sourceTree = "<group>"; };
+		CD931FF01E057E17000C20BE /* StudentDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDB.swift; sourceTree = "<group>"; };
+		CD931FF41E05A015000C20BE /* Jitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jitterable.swift; sourceTree = "<group>"; };
+		CD931FF61E05A028000C20BE /* Flashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,55 @@
 		CD931FD01E055BD9000C20BE /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
-				CD931FD11E055BD9000C20BE /* AppDelegate.swift */,
-				CD931FD31E055BD9000C20BE /* ViewController.swift */,
-				CD931FD51E055BD9000C20BE /* Main.storyboard */,
+				CD931FF31E059FEF000C20BE /* Protocols */,
+				CD931FE81E056D1A000C20BE /* Model */,
+				CD931FEF1E0576C7000C20BE /* Controller */,
+				CD931FF21E05891A000C20BE /* View */,
 				CD931FDB1E055BD9000C20BE /* Assets.xcassets */,
+				CD75E06F1E05DD4F001257A8 /* Main.storyboard */,
+				CD931FD11E055BD9000C20BE /* AppDelegate.swift */,
 				CD931FDD1E055BD9000C20BE /* LaunchScreen.storyboard */,
 				CD931FE01E055BD9000C20BE /* Info.plist */,
 				CD931FD81E055BD9000C20BE /* Assignment3.xcdatamodeld */,
 			);
 			path = Assignment3;
+			sourceTree = "<group>";
+		};
+		CD931FE81E056D1A000C20BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD931FE91E056D3A000C20BE /* Student.swift */,
+				CD931FF01E057E17000C20BE /* StudentDB.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CD931FEF1E0576C7000C20BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD931FD31E055BD9000C20BE /* ViewController.swift */,
+				CD931FED1E0576BD000C20BE /* AddStudentController.swift */,
+				CD75E06B1E05ACB2001257A8 /* StudentDetailsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD931FF21E05891A000C20BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD931FE61E056B40000C20BE /* TableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD931FF31E059FEF000C20BE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CD931FF41E05A015000C20BE /* Jitterable.swift */,
+				CD931FF61E05A028000C20BE /* Flashable.swift */,
+				CD75E06D1E05ACE0001257A8 /* StudentDelegate.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD75E0711E05DD4F001257A8 /* Main.storyboard in Resources */,
 				CD931FDF1E055BD9000C20BE /* LaunchScreen.storyboard in Resources */,
 				CD931FDC1E055BD9000C20BE /* Assets.xcassets in Resources */,
-				CD931FD71E055BD9000C20BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,18 +196,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD931FDA1E055BD9000C20BE /* Assignment3.xcdatamodeld in Sources */,
+				CD931FF51E05A015000C20BE /* Jitterable.swift in Sources */,
+				CD931FE71E056B40000C20BE /* TableViewCell.swift in Sources */,
 				CD931FD41E055BD9000C20BE /* ViewController.swift in Sources */,
+				CD931FF71E05A028000C20BE /* Flashable.swift in Sources */,
+				CD931FEA1E056D3A000C20BE /* Student.swift in Sources */,
 				CD931FD21E055BD9000C20BE /* AppDelegate.swift in Sources */,
+				CD75E06C1E05ACB2001257A8 /* StudentDetailsViewController.swift in Sources */,
+				CD75E06E1E05ACE0001257A8 /* StudentDelegate.swift in Sources */,
+				CD931FF11E057E17000C20BE /* StudentDB.swift in Sources */,
+				CD931FEE1E0576BD000C20BE /* AddStudentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CD931FD51E055BD9000C20BE /* Main.storyboard */ = {
+		CD75E06F1E05DD4F001257A8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CD931FD61E055BD9000C20BE /* Base */,
+				CD75E0701E05DD4F001257A8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -303,6 +367,7 @@
 				CD931FE51E055BD9000C20BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
