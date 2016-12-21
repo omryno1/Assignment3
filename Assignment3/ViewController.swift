@@ -10,15 +10,39 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate , AddStudentDelegate {
 
+
+//    @IBAction func editBarButtonWasPressed(_ sender: Any) {
+//        if editBarButton.title == "Edit"{
+//            self.mainTableView.setEditing(true, animated: true)
+//            editButtonItem.title = "Done"
+//        }else {
+//            self.mainTableView.setEditing(false, animated: true)
+//            editBarButton.title = "Edit"
+//        }
+//    }
     @IBOutlet weak var mainTableView: UITableView!
     
     var studentsDB = StudentDB.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = editButtonItem
         mainTableView.dataSource = self
         mainTableView.delegate = self
     
+    }
+
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        if editing {
+            if editButtonItem.title == "Edit"{
+                self.mainTableView.setEditing(true, animated: true)
+                editButtonItem.title = "Done"
+            }else{
+                self.mainTableView.setEditing(false, animated: true)
+                editButtonItem.title = "Edit"
+            }
+        }
+        
     }
 
     @IBAction func addStudenButtonWasPressed(_ sender: UIBarButtonItem) {
